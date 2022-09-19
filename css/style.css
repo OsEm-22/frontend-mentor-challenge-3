@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+h3 {
+  color: hsl(0deg, 0%, 100%);
+  text-align: start;
+}
+
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  text-decoration: none;
+  margin-top: 15px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 18.72px;
+}
+
+.card-title:hover {
+  color: hsl(178deg, 100%, 50%);
+  font-size: 18.72px;
+}
+
+.card-body {
+  background-color: hsl(216deg, 50%, 16%);
+  width: 240px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-image {
+  height: 240px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cyan-hov {
+  width: 240px;
+  height: 240px;
+  background-color: hsla(178deg, 100%, 50%, 0.6);
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.cyan-hov:hover {
+  opacity: 100%;
+}
+
+.view {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 17px;
+  color: hsl(215deg, 51%, 70%);
+}
+
+.left {
+  color: hsl(178deg, 100%, 50%);
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+}
+
+.right {
+  color: hsl(215deg, 51%, 70%);
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+}
+
+.line {
+  color: hsl(215deg, 32%, 27%);
+  border: 0.5px solid hsl(215deg, 32%, 27%);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.card-footer {
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.card-footer img {
+  height: 30px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.card-footer p {
+  font-size: 14px;
+}
+.card-footer a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+.card-footer a:hover {
+  color: hsl(178deg, 100%, 50%);
+  text-decoration: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(178deg, 100%, 50%);
+}
+
+/*# sourceMappingURL=style.css.map */

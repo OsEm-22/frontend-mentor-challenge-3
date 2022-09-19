@@ -1,0 +1,158 @@
+// ## Colors
+// ### Primary
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+// ### Neutral
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line-color: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$outfit: "Outfit", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $main-bg;
+  font-family: $outfit;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+h3 {
+  color: $white;
+  text-align: start;
+}
+
+.card {
+  background-color: $card-bg;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  text-decoration: none;
+  margin-top: 15px;
+  color: $white;
+  font-size: 18.72px;
+}
+
+.card-title:hover {
+  color: $cyan;
+  font-size: 18.72px;
+}
+
+.card-body {
+  background-color: $card-bg;
+  width: 240px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-image {
+  height: 240px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+.cyan-hov {
+  width: 240px;
+  height: 240px;
+  background-color: hsl(178, 100%, 50%, 60%);
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.cyan-hov:hover {
+  opacity: 100%;
+}
+
+.view {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 17px;
+  color: $soft-blue;
+}
+
+.left {
+  color: $cyan;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+}
+.right {
+  color: $soft-blue;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+}
+
+.line {
+  color: $line-color;
+  border: 0.5px solid $line-color;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.card-footer {
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  img {
+    height: 30px;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $cyan;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $white;
+}
+.attribution a {
+  color: $cyan;
+}
